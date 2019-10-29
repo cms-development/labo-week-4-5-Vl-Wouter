@@ -1,0 +1,36 @@
+@keyframes bounce {
+    0%, 75%, 100% {
+        transform: translateY(0)
+    }
+
+    25% {
+        transform: translateY(-20px);
+    }
+}
+
+.loader__container {
+    height: calc(100vh - 80px);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .loader span {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        background-color: #58a4b0;
+        margin: 35px 5px;
+
+        @for $i from 1 through 3 {
+            &:nth-child(#{$i}) {
+                animation-name: bounce;
+                animation-duration: 1s;
+                animation-timing-function: ease-in-out;
+                animation-delay: ((0.33s*$i) - 0.33);
+                animation-iteration-count: infinite;
+            }
+        }
+    }
+}

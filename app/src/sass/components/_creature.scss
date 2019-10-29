@@ -1,0 +1,31 @@
+.creature {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+
+    &__image {
+        flex: 0 0 45%;
+    }
+
+    &__content {
+        line-height: 1.8;
+        color: #576b8d;
+
+        &Title {
+            margin-bottom: 32px;
+            font-size: 64px;
+            line-height: 1;
+            color: #2a3850;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            font-size: 14px;
+            line-height: 2;
+            color: #97a3b8;
+        }
+    }
+}

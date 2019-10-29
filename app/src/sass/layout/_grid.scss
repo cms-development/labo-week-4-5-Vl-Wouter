@@ -1,0 +1,48 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+    min-height: 100vh;
+
+    &.-top {
+        padding-top: 80px;
+    }
+
+    &.-fluid {
+        width: 100%;
+    }
+
+    &.-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+}
+
+$columns: 12;
+
+@each $name, $point in $bp {
+    @media (min-width: map-get($map: $bp, $key: $name)) {
+        @for $i from 1 through $columns {
+            .col-#{$name}-#{$i} {
+                flex-basis: (100% / $columns) * $i;
+                padding: 0 8px;
+                box-sizing: border-box;
+
+                &.-right {
+                    display: flex;
+                    justify-content: flex-end;
+                }
+            }
+
+            .offset-#{$name}-#{$i} {
+                margin-left: (100% / $columns) * $i;
+            }
+        }
+    }
+}

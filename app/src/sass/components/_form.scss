@@ -1,0 +1,45 @@
+.form {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+
+    &.-card {
+        box-shadow: 0 5px 10px #00000005, 0 10px 40px #00000020;
+        padding: 48px;
+        background-color: #fefefe;
+    }
+
+    &__title {
+        font-size: 32px;
+        margin-bottom: 2px;
+        line-height: 1;
+    }
+
+    &__subtitle {
+        color:  #62748f;
+        margin-bottom: 16px;
+    }
+
+    &__group {
+        display: flex;
+        flex-flow: column nowrap;
+        padding: 8px 0;
+
+        label {
+            color: #758aaa;
+            font-size: 12px;
+        }
+
+        input {
+            border: none;
+            border-bottom: 1px solid #62748f;
+        }
+    }
+
+    &__error {
+        width: 100%;
+        background-color: #f8dada;
+        color: #922121;
+        padding: 8px;
+    }
+}

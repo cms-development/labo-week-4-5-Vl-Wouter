@@ -1,0 +1,28 @@
+.alert {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    top: 0;
+    left: 0;
+    background-color: #ededed;
+    box-shadow: 0 6px 10px #0001;
+
+
+    &__message {
+        display: flex;
+        justify-content: flex-start;
+        align-items: baseline;
+
+        * {
+            margin: 0 5px;
+        }
+    }
+
+    &.error {
+        background-color: #ffc6c6;
+        color: #490707;
+    }
+}
