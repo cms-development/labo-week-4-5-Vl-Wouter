@@ -14,7 +14,9 @@ Dit is de repository van Labo 4 & 5, uitgewerkt door Wouter Vlaeyen. De Wordpres
 
 ## Media
 
-Coming soon
+De 3 vereiste screenshots van labo 4 staan in de map `/screenshots`. Enkel 1 screenshot toont het volledige scherm, aangezien deze techniek niet goed werkte bij de andere.
+
+De screencast voor labo 5 is hier te vinden: [screencast](https://youtu.be/fXh-JiHiIT0)
 
 ## Setup
 
